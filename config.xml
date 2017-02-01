@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<widget xmlns="http://www.w3c.org/ns/widgets"
+    xmlns:gap="http://phonegap.com/ns/1.0" version="1.0.0" id="br.com.rbh.cenourapp">
+    
+    <name>Só de Cenoura</name>
+    <description>
+        Menu do restaurante Só de Cenoura
+    </description>
+    
+    <author href="www.rbh.com.br" email="rherebia@gmail.com">
+        Renato Herebia
+    </author>
+    
+    <icon src="icon.png" />
+    <gap:splash src="splash.png" />
+    
+    <preference name="orientation" value="portrait" />
+    <preference name="fullscreen" value="true" />
+    <preference name="permissions" value="none" />
+    
+    <plugin name="cordova-plugin-splashscreen" />
+    <gap:platform name="android" />
+    
+</widget>
