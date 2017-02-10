@@ -61,9 +61,16 @@ $('.acao-finalizar').click(function () {
 
            $('#numero-mesa').val('');
            $('.badge').remove();
+
+           navigator.vibrate(2000);
        },
        error: function (erro) {
            Materialize.toast(erro.responseText, 3000, 'red-text');
        }
    })
 });
+
+document.addEventListener("deviceready", onDeviceReady, false);
+function onDeviceReady() {
+    console.log(navigator.vibrate);
+}
